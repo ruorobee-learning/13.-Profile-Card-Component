@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-blue: hsl(229, 23%, 23%);
+    --grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%)
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.background {
+    position: absolute;
+    inset: 0; /* stretches full width + height */
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bg-pattern-top {
+    position: absolute;
+    top: -55%;
+    left: -10%;
+}
+
+.bg-pattern-bottom {
+    position: absolute;
+    bottom: -55%;
+    right: -10%;
+}
+
+.card-container {
+    position: relative;
+    z-index: 1;
+    max-width: 350px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.50);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.profile-banner {
+    width: 350px;
+    height: 120px;
+    background-color: var(--dark-cyan);
+}
+
+.profile-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E8E9EC;
+}
+
+.user-details img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    margin-top: -48px;
+    margin-bottom: 8px ;
+}
+
+.user-name-age {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.user-info h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.user-info p, .location {
+    color: var(--grayish-blue);
+    font-weight: 400;
+    
+}
+
+.location {
+    font-size: 14px;
+}
+
+.user-activity-summary{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 40px;
+}
+
+.user-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.user-stat h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.user-stat p {
+    color: var(--grayish-blue);
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
