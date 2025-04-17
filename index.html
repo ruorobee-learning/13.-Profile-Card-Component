@@ -1,68 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-  <title>Frontend Mentor | Profile card component</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-  <!-- Background Image -->
-  <div class="background">
-    <img src="./images/bg-pattern-top.svg" alt="Background Pattern Top Desktop" class="bg-pattern-top">
-    <img src="./images/bg-pattern-bottom.svg" alt="Background Pattern Bottom Desktop" class="bg-pattern-bottom">
-  </div>
-
-  <!-- Profile Card -->
-
-  <div class="card-container">
-
-    <!-- Banner Image -->
-    <div class="profile-banner">
-      <img src="./images/bg-pattern-card.svg" alt="Banner Image" class="banner-image">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Decorative background patterns -->
+    <div class="background">
+      <img
+        src="./images/bg-pattern-top.svg"
+        alt=""
+        aria-hidden="true"
+        class="bg-pattern-top"
+      />
+      <img
+        src="./images/bg-pattern-bottom.svg"
+        alt=""
+        aria-hidden="true"
+        class="bg-pattern-bottom"
+      />
     </div>
 
-    <!-- User Image and Details -->
-    <div class="user-details">
-      <div class="user-image">
-        <img src="./images/image-victor.jpg" alt="User Image" class="user-photo">
-      </div>
-      <div class="user-name-age">
-        <div class="user-info">
-          <h1 class="name">Victor Crest</h1>
-          <p class="age">26</p>
-        </div>
-        <p class="location">London</p>
-      </div>
-    </div>
-    
-    <!-- User Activity Summary -->
-    <div class="user-activity-summary">
-        <div class="user-stat">
-          <h2 class="stat-figure">80K</h2>
-          <p class="stat-description">Followers</p>
-        </div>
-        <div class="user-stat">
-          <h2 class="stat-figure">803K</h2>
-          <p class="stat-description">Likes</p>
-        </div>
-        <div class="user-stat">
-          <h2 class="stat-figure">1.4K</h2>
-          <p class="stat-description">Photos</p>
-        </div>
+    <!-- Main content landmark -->
+    <main class="card-container">
+      <!-- Top banner -->
+      <div class="profile-banner">
+        <img
+          src="./images/bg-pattern-card.svg"
+          alt="Card banner background"
+        />
       </div>
 
+      <!-- User profile details -->
+      <section class="user-details">
+        <img src="./images/image-victor.jpg" alt="Victor Crest" />
+        <div class="user-name-age">
+          <div class="user-info">
+            <h1>Victor Crest</h1>
+            <p>26</p>
+          </div>
+          <p class="location">London</p>
+        </div>
+      </section>
 
-</body>
-
+      <!-- Stats section -->
+      <section class="user-activity-summary">
+        <div class="user-stat">
+          <h2>80K</h2>
+          <p>Followers</p>
+        </div>
+        <div class="user-stat">
+          <h2>803K</h2>
+          <p>Likes</p>
+        </div>
+        <div class="user-stat">
+          <h2>1.4K</h2>
+          <p>Photos</p>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
