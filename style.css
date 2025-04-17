@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 :root {
@@ -146,3 +147,14 @@ body {
     font-size: 10px;
     letter-spacing: 1.5px;
 }
+
+@media (max-width: 375px) {
+    .card-container {
+      max-width: 326px;
+      width: 100%;
+    }
+    .bg-pattern-top,
+    .bg-pattern-bottom {
+    transform: scale(0.7); /* 30% smaller */
+  }
+  }
